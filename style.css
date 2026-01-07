@@ -1,0 +1,332 @@
+body {
+  color: white;
+  font-family: "TASA Orbiter", sans-serif;
+  background-image: url('img/pagi.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.67);
+  background-blend-mode: darken;
+  transition: background-image 2s ease-in-out;
+  min-height: 100vh;
+  
+}
+
+header {
+  background: rgba(0, 0, 0, 0.45); 
+  border-bottom: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  
+}
+
+header .row {
+  align-items: center; 
+}
+
+
+header i.fa-mosque {
+  font-size: 2.8rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+header .col.text-start {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 2px 0 0 0;
+}
+
+header #current-time {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #f7e309;
+  text-shadow: 0 0 10px rgba(241, 201, 2, 0.767);
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 4px;
+}
+
+header #current-date,
+header #hijri-date {
+  font-size: 0.95rem;
+  color: #ddd;
+  line-height: 1.2;
+  margin: 0;
+}
+
+
+
+marquee {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+h1, h2, p {
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: 1px solid #FFD700;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(221, 219, 163, 0.958);
+  padding: 0.5rem
+
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffff;
+}
+
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    
+}
+
+.jadwal-shalat {
+  min-height: 30vh;
+  margin-bottom: 40px;
+}
+
+.jadwal-shalat .card {
+  height: 120px;
+  min-height: 110px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jadwal-shalat h4 {
+  margin-bottom: 1.5rem;
+}
+
+
+#next-prayer-countdown {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f7e309;
+  text-shadow: 0 0 10px rgba(241, 201, 2, 0.767);
+   font-family: "JetBrains Mono", monospace;
+}
+
+#ramadhan-countdown {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f7e309;
+  text-shadow: 0 0 10px rgba(241, 201, 2, 0.767);
+   font-family: "JetBrains Mono", monospace;
+}
+
+#current-time {
+  font-weight: bold;
+  color: #f7e309;
+  text-shadow: 0 0 10px rgba(241, 201, 2, 0.767);
+   font-family: "JetBrains Mono", monospace;
+}
+
+#current-date {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-countdown {
+  max-width: 460px;
+}
+
+.waktu {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  border: 2px solid #FFD700;
+  padding: 5px 10px;
+  margin: auto;
+  display: inline-block;
+  border-radius: 5px;
+   font-family: "JetBrains Mono", monospace;
+}
+
+.prayer-active {
+  border: 2px solid #ffc107 !important;
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.8);
+  transform: scale(1.08);
+  background: rgba(255, 193, 7, 0.08);
+}
+
+
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+ flex: 1;
+}
+
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+@media (min-width: 1366px) {
+  .jadwal-shalat .card {
+    height: 140px;
+  }
+
+  #current-time {
+     font-size: 2.5rem;
+  }
+
+  .waktu {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Tablet & Laptop kecil */
+@media (min-width: 1024px) {
+  .jadwal-shalat .card {
+    width: 12rem;
+    min-height: 100px;
+  }
+
+  .card-countdown {
+    max-width: 380px;
+  }
+}
+
+/* HP */
+ 
+@media (max-width: 768px) {
+  /* Atur header agar rapi di HP */
+  header {
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  header .row {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .col.text-start,
+  header .col.text-end {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header .d-flex.align-items-center {
+    flex-direction: column !important;
+    gap: 0.3rem; 
+  }
+
+  header i.fa-mosque {
+    font-size: 2.6rem;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    margin-bottom: 0.2rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    margin: 0.2rem 0 0.1rem;
+    text-align: center;
+  }
+
+  header p {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+    text-align: center;
+  }
+
+  header #current-time {
+    font-size: 1.8rem;
+    padding: 3px;
+  }
+
+  header #current-date,
+  header #hijri-date {
+    font-size: 0.9rem;
+    padding: 2px;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+  html, body {
+    overflow: hidden;
+  }
+
+  main {
+    max-height: calc(100vh - 140px);
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1600px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
