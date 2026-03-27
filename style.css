@@ -209,6 +209,31 @@ html, body {
   overflow-y: auto;
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-text {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: jalan 15s linear infinite;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+@keyframes jalan {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 
 @media (min-width: 1366px) {
   .jadwal-shalat .card {
